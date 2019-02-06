@@ -4,5 +4,6 @@
 <beans>
     <bean id="triangle" class="com.lkb.springdemo.Triangle">
         <constructor-arg value="Equilateral"/>
+        <constructor-arg type="int" value="20"/>
     </bean>
 </beans>
