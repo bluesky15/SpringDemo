@@ -1,33 +1,36 @@
 package com.lkb.springdemo;
 
 public class Triangle {
-    private String type;
+    Point pointA;
+    Point pointB;
+    Point pointC;
 
 
-    private int height;
-
-    public Triangle(String type) {
-        this.type = type;
+    public Point getPointA() {
+        return pointA;
     }
 
-    public Triangle(int height) {
-        this.height = height;
+    public void setPointA(Point pointA) {
+        this.pointA = pointA;
     }
 
-    public Triangle(String type, int height) {
-        this.type = type;
-        this.height = height;
+    public Point getPointB() {
+        return pointB;
+    }
+
+    public void setPointB(Point pointB) {
+        this.pointB = pointB;
+    }
+
+    public Point getPointC() {
+        return pointC;
+    }
+
+    public void setPointC(Point pointC) {
+        this.pointC = pointC;
     }
 
     public void draw() {
-        System.out.println(getType() + " Triangle drawn with height "+getHeight());
-    }
-
-    public int getHeight() {
-        return height;
-    }
-
-    public String getType() {
-        return type;
+        System.out.println(" Triangle drawn with pointA  at" + getPointA() + " pointB at " + getPointB() + " pointc at " + getPointC());
     }
 }
