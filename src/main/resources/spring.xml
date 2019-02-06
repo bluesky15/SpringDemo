@@ -3,6 +3,6 @@
         "http://www.springframework.org/dtd/spring-beans.dtd">
 <beans>
     <bean id="triangle" class="com.lkb.springdemo.Triangle">
-        <property name="type" value="Equilateral"/>
+        <constructor-arg value="Equilateral"/>
     </bean>
 </beans>
