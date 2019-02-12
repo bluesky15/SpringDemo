@@ -1,13 +1,12 @@
 package com.lkb.springdemo;
 
-import org.springframework.beans.factory.BeanFactory;
-import org.springframework.beans.factory.xml.XmlBeanFactory;
-import org.springframework.core.io.FileSystemResource;
+import org.springframework.context.ApplicationContext;
+import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 
 public class DrawingApp {
     public static void main(String[] args) {
-        BeanFactory factory = new XmlBeanFactory(new FileSystemResource("spring.xml"));
-        Triangle triangle = (Triangle) factory.getBean("triangle");
+        ApplicationContext factory = new AnnotationConfigApplicationContext(ApplicationConfig.class);
+        Triangle triangle = factory.getBean(Triangle.class);
         triangle.draw();
     }
 }
