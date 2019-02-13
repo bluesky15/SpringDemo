@@ -1,4 +1,4 @@
-package com.lkb.springdemo;
+package com.lkb.springdemo.model;
 
 import com.lkb.springdemo.model.HotelBooking;
 import org.springframework.data.jpa.repository.JpaRepository;

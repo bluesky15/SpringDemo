@@ -1,6 +1,7 @@
-package com.lkb.springdemo;
+package com.lkb.springdemo.restcontroller;
 
 
+import com.lkb.springdemo.model.BookingRepository;
 import com.lkb.springdemo.model.HotelBooking;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
@@ -10,7 +11,7 @@ import java.util.List;
 @RestController
 @RequestMapping(value="/bookings")
 public class BookingController {
-   private  BookingRepository bookingRepository;
+   private BookingRepository bookingRepository;
 
     @Autowired
     public BookingController(BookingRepository bookingRepository) {

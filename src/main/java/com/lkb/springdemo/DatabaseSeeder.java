@@ -1,5 +1,6 @@
 package com.lkb.springdemo;
 
+import com.lkb.springdemo.model.BookingRepository;
 import com.lkb.springdemo.model.HotelBooking;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.CommandLineRunner;
