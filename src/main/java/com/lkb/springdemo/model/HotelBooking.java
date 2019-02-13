@@ -6,6 +6,7 @@ import javax.persistence.*;
 @Table(name = "booking")
 public class HotelBooking {
 
+
     @Id
     @GeneratedValue(strategy = GenerationType.SEQUENCE)
     private long id;
@@ -49,4 +50,13 @@ public class HotelBooking {
     public double getTotalPrice(){
         return getNbOfNights()* getPricePerNight();
     }
+
+    public long getId() {
+        return id;
+    }
+
+    public void setId(long id) {
+        this.id = id;
+    }
+
 }
